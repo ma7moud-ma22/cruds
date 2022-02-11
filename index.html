@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="head">
+        <h1>cruds</h1>
+        <p>product management system</p>
+      </div>
+
+      <div class="inputs">
+        <input type="text" name="" placeholder="title" id="title" required />
+        <div class="price">
+          <input type="number" name="" id="price" placeholder="price" required />
+          <input type="number" name="" id="taxes" placeholder="taxes" />
+          <input type="number" name="" id="ads" placeholder="ads" />
+          <input type="number" name="" id="discount" placeholder="discount"  />
+          <p id="total"></p>
+        </div>
+        <input
+          type="number"
+          name=""
+          id="pro-count"
+          placeholder="number of products"
+        />
+        <input type="text" name="" id="category" placeholder="category" required />
+        <button id="create">create</button>
+      </div>
+      <div class="output">
+        <div id="deleteAll"></div>
+        <div class="table-cont">
+          <table>
+            <thead>
+              <tr>
+                <td>id</td>
+                <td>title</td>
+                <td>price</td>
+                <td>taxes</td>
+                <td>ads</td>
+                <td>discount</td>
+                <td>category</td>
+                <td>update</td>
+                <td>delete</td>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div id="check">
+        Product number <span id="checkerID"> </span> has been<br />
+        successfully deleted ✔
+      </div>
+      <div id="parent-confirm">
+         <div id="confirm">
+        <p>are you sure to delete all products?</p>
+        <div class="buttons">
+          <button id="yes">yes</button>
+          <button id="no">no</button>
+        </div>
+      </div>
+      </div>
+     
+    </div>
+    <footer>created by <span>mahmoud mahmoud</span> ©</footer>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-image: linear-gradient(to right, rgb(29, 29, 29), rgb(15, 15, 15));
+
+  color: rgb(199, 199, 199);
+}
+::placeholder {
+  user-select: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 98%;
+  }
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent !important;
+  border: 0.5px solid #333;
+  margin: 2px 0;
+  padding: 5px 0;
+  text-transform: capitalize;
+}
+.head h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+.inputs {
+  margin-top: 10px;
+  border: 0.5px solid #333;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  background-color: #333;
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #eee;
+  transition: 0.2s;
+}
+input:focus,
+input:hover {
+  outline: none;
+  background-color: rgb(65, 65, 65);
+}
+input::placeholder {
+  text-transform: capitalize;
+}
+button {
+  background-color: #00acc1;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: rgb(235, 235, 235);
+  text-transform: capitalize;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 5px;
+  padding: 5px;
+  user-select: none;
+}
+button:hover {
+  filter: brightness(1.25);
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price input {
+  width: 20%;
+}
+.price p {
+  min-width: 100px;
+  padding: 8px 1px;
+  border-radius: 5px;
+  background-color: rgb(121, 2, 2);
+  text-align: center;
+}
+.price p::before {
+  content: "Total: ";
+}
+
+.output {
+  border: 1px solid #333;
+  margin: 5px 0;
+  width: 100%;
+}
+.output .search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.search input {
+  width: 100%;
+}
+.search button {
+  padding: 0 30px;
+}
+.table-cont {
+  max-height: 290px;
+  overflow-y: auto;
+}
+table {
+  width: 100%;
+  border: 1px solid #333;
+  text-align: center;
+  padding: 5px;
+}
+table thead td {
+  text-transform: uppercase;
+  padding: 5px;
+}
+table button {
+  font-size: 15px;
+  font-weight: normal;
+}
+table td {
+  border: 1px solid #333;
+}
+
+#delete {
+  background-color: rgb(121, 2, 2);
+}
+#check {
+  background-color: rgb(121 2 2);
+  width: fit-content;
+  padding: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: -550px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: capitalize;
+  transition: 0.5s;
+  color: #fff;
+  text-align: center;
+}
+#check span {
+  font-weight: bolder;
+  background-color: green;
+  display: inline-block;
+  height: 100%;
+  border-radius: 50%;
+  padding: 3px 6px;
+}
+#deleteAll button {
+  align-items: center;
+  width: 100%;
+  background-color: rgb(121 2 2);
+}
+#parent-confirm {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(83, 83, 83, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+#confirm {
+  background-color: #00acc1;
+  width: fit-content;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 40px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px 3px #2196f37a, -1px -1px 20px 3px #4144467a;
+}
+#confirm .buttons {
+  display: flex;
+  justify-content: space-around;
+}
+#confirm .buttons button {
+  border: 0.2px solid #333;
+  padding: 0 20px;
+}
+#yes {
+  background-color: rgb(121 2 2);
+}
+footer{
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  text-transform: capitalize;
+}
+footer span{
+  color: #00acc1;
+}

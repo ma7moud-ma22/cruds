@@ -1,0 +1,5 @@
+
+CRUDS is a shortCut to [Create - Read - Update - Delete - Search]
+
+Create by: Mahmoud Mahmoud;
+Date: 10/2/2022;
